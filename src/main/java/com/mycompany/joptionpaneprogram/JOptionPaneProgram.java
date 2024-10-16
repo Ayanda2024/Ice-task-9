@@ -29,12 +29,39 @@ public class JOptionPaneProgram {
        c=Integer.parseInt(num2);
         boolean running=true;
        
-        
+        while(running){
+         String options=JOptionPane.showInputDialog(null,"Choose an operation for the two values\n"+
+                 "1.Addition\n"+"2.Subtraction\n"+"3.Multiplication\n"+"4.Division\n"+"0.Exit");
          
-     }
+         switch(options){
+             case "1":JOptionPane.showMessageDialog(null,"The sum of "+b+"&"+c+"is"+(b+c)) ;
+             break;
+             
+             case "2":JOptionPane.showMessageDialog(null,"The subtraction of"+b+"&"+c+"is"+(b-c));
+             break;
+             
+             case "3":JOptionPane.showMessageDialog(null,"The multiplication of "+b+"&"+c+"is"+b+"*"+c+"="+product);
+             break;
+           
+             case "4": JOptionPane.showMessageDialog(null,"The division of "+b+"&"+c+"is"+b+"/"+c+"="+division);
+             
+         
+             case "0":JOptionPane.showMessageDialog(null,"Exiting");
+             System.exit(0);
+             break;
+             default:
+                 JOptionPane.showMessageDialog(null,"Calculation not recognnised");
+                 
+                 
+       
+        }
+         
+        }
+    }
+}
        
        
-     }
+     
     
 
 
