@@ -22,13 +22,20 @@ public class JOptionPaneProgram {
        int product=b*c;
        int division=b/c;
       
+        num1=JOptionPane.showInputDialog(null,"Enter the first number");
+       b=Integer.parseInt(num1);
+       
+       num2=JOptionPane.showInputDialog(null,"Enter the second number");
+       c=Integer.parseInt(num2);
+        boolean running=true;
        
         
-       
-     
+         
+     }
        
        
      }
-    }
+    
+
 
 
